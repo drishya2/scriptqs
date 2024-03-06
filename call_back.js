@@ -15,3 +15,5 @@ const calculate=function(side,logic){
 
 console.log(calculate(side, area));
 console.log(calculate(side, perimeter));
+
+

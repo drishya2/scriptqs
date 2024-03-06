@@ -10,31 +10,31 @@ covid_data = [
     [8,'Kollam',14000,2500,25000,18000,2700]
 ]
 
-// let highestCase = covid_data.reduce((p1,p2)=>p1[2]>p2[2]?p1:p2)
-// console.log(highestCase);
+let highestCase = covid_data.reduce((p1,p2)=>p1[2]>p2[2]?p1:p2)
+console.log(highestCase);
 
-// let highest_dose=covid_data.reduce((p1,p2)=>p1[5]>p2[5]?p1:p2);
-// console.log(highest_dose);
+let highest_dose=covid_data.reduce((p1,p2)=>p1[5]>p2[5]?p1:p2);
+console.log(highest_dose);
 
 
-//3. district having lowest death rate - 
-// let lowest_death=covid_data.reduce((p1,p2)=>p1[3]<p2[3]?p1:p2);
-// console.log(lowest_death);
+// 3. district having lowest death rate - 
+let lowest_death=covid_data.reduce((p1,p2)=>p1[3]<p2[3]?p1:p2);
+console.log(lowest_death);
 
   
-//4. sort data with +ve case in descending order -
-// let sorted=covid_data.sort((p1,p2)=>p2[2]-p1[2]).forEach(k=>console.log(k[1],k[2]));
-// console.log(sorted);
+// 4. sort data with +ve case in descending order -
+let sorted=covid_data.sort((p1,p2)=>p2[2]-p1[2]).forEach(k=>console.log(k[1],k[2]));
+console.log(sorted);
 
 
-//5. is district with +ve cases > 15000 - 
-// let cases_greater=covid_data.filter((item)=>item[2]>15000).forEach(element => {console.log(element[1],element[2])
-//     });;
+// 5. is district with +ve cases > 15000 - 
+let cases_greater=covid_data.filter((item)=>item[2]>15000).forEach(element => {console.log(element[1],element[2])
+    });;
 
 
-//6. sort data with 1st dose vaccine - 
-// dose_sorted=covid_data.sort((p1,p2)=>p1[5]-p2[5]).forEach(element => console.log(element[1],element[5]
-// ));
+// 6. sort data with 1st dose vaccine - 
+dose_sorted=covid_data.sort((p1,p2)=>p1[5]-p2[5]).forEach(element => console.log(element[1],element[5]
+));
 
 
 //7. Print Thrissur details - 
